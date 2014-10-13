@@ -54,7 +54,10 @@ angular.module('NgSwitchery', [])
                 })
               }, 0);
             }
-            initializeSwitch();
+	scope.$watch('initValue',function(){	     
+	       initializeSwitch();
+	});
+
           }
 
         return {
